@@ -19,10 +19,7 @@ namespace horas_trabajadas
 
         private void button1_Click(object sender, EventArgs e)
         {
-            double horastrabajadas = double.Parse(txthorastrabajadas.Text);
-            double valorhora = double.Parse(txtvalorhora.Text);
-            double total = horastrabajadas * valorhora;
-
+           
             double horastrabajadas = double.Parse(txthorastrabajadas.Text);
             double valorhora = double.Parse(txtvalorhora.Text);
             double total = horastrabajadas * valorhora;
