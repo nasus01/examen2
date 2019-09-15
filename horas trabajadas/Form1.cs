@@ -25,7 +25,7 @@ namespace horas_trabajadas
 
             if (total >=1000001)
             {
-                total = total = (total * 0.3) - total;
+                total = (total / 0.5) * 0.2;
 
                 lbltotalsalario.Text = "$" + Convert.ToDecimal(total).ToString("N0");
                 lbltotalsalario.Visible = true;
