@@ -23,7 +23,7 @@ namespace horas_trabajadas
             double horastrabajadas = double.Parse(txthorastrabajadas.Text);
             double valorhora = double.Parse(txtvalorhora.Text);
             double total = horastrabajadas * valorhora;
-            double desc=valorhora*0.5;
+            double desc=valorhora*0.05;
             if (total <= 700000) {
                 total = total * 0.10+total;
                 lbltotalsalario.Text = "$" + Convert.ToDecimal(total).ToString("N0");
@@ -35,7 +35,7 @@ namespace horas_trabajadas
             {
                 if (total <= 1000000)
                 {
-                    total = (total-desc)-0.3;
+                    total = (total-desc)-0.03;
                     lbltotalsalario.Text = "$" + Convert.ToDecimal(total).ToString("N0");
                     lbltotalsalario.Visible = true;
                     MessageBox.Show("tienes un descueto del 2%");
@@ -43,7 +43,7 @@ namespace horas_trabajadas
             }
             if (total >= 1000001) {
 
-                total = (total - desc)+0.2;
+                total = (total - desc)+0.02;
                 lbltotalsalario.Text = "$" + Convert.ToDecimal(total).ToString("N0");
                 lbltotalsalario.Visible = true;
                 MessageBox.Show("tienes un descueto del 5% y un incremento del 2%");
